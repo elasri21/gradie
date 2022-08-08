@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../Assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  .container > div {
+    width: 350px;
+    padding: 30px 30px 0 30px;
+  }
+  .container > div.form {
+    padding-bottom: 30px;
+  }
+}
+.container .illus {
+  background-color: #0a3d62;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+.container .illus h1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .illus p {
+  color: #38ada9;
+  font-size: 14px;
+  font-weight: 300;
+}
+.container .illus img {
+  width: 100%;
+}
+.container .form {
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+}
+.container .form h2 {
+  color: #191717;
+  margin-bottom: 20px;
+}
+.container .form form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #191717;
+}
+.container .form form a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a3d62;
+}
+.container .form form input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+.container .form form input.field {
+  border: 1px solid #b6b8b9;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.container .form form input.field::placeholder {
+  color: #b6b8b9;
+}
+.container .form form input.check {
+  border-color: #b6b8b9;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.container .form form input.submit {
+  margin-top: 20px;
+  background-color: #0a3d62;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: url("../Assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container {
+    @media #{$small} {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        & > div {
+            width: 350px;
+            padding: 30px 30px 0 30px;
+            &.form {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .illus {
+        background-color: $btn-bg;
+        text-align: center;
+        padding: 20px 20px 0 20px;
+        h1 {
+            color: $white;
+            margin-bottom: 10px;
+        }
+        p {
+            color: $isngl-text;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .form {
+        background-color: $white;
+        padding: 20px 20px 20px 20px;
+        h2 {
+            color: $dark-text;
+            margin-bottom: 20px;
+        }
+        form {
+            label {
+                font-size: 16px;
+                font-weight: 600;
+                color: $dark-text;
+            }
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                color: $btn-bg;
+            }
+            input {
+                background: none;
+                outline: none;
+                border: none;
+                padding: 12px 12px;
+                border-radius: 4px;
+                display: block;
+                width: 100%;
+                &.field {
+                    border: 1px solid $light-text;
+                    margin-bottom: 20px;
+                    margin-top: 5px;
+                    &::placeholder {
+                        color: $light-text;
+                    }
+                }
+                &.check {
+                    border-color: $light-text;
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                &.submit {
+                    margin-top: 20px;
+                    background-color: $btn-bg;
+                    color: $white;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+
+        }
+    }
+}
